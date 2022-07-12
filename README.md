@@ -1,8 +1,4 @@
-# jstack-mycontacts
-
-## Começo de Tudo
-
-Resumo do Projeto
+## Resumo do Projeto
 Construirmos uma API REST utilizando apenas os módulos nativos do próprio Node. Zero dependências por aqui!
 
 Depois de aprender como o Node funciona sozinho, refazemos tudo utilizando o framework mais famoso e utilizado no mercado: o Express. Além disso, abordarmos Docker, Postgres, SQL e alguns patterns como o Singleton e o Repository.
