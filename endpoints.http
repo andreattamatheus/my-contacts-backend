@@ -1,0 +1,26 @@
+GET  http://localhost:3000/contacts
+
+###
+GET  http://localhost:3000/contacts/e79733e0-9238-4e36-84e7-aea49bb827ea
+
+###
+DELETE  http://localhost:3000/contacts/e79733e0-9238-4e36-84e7-aea49bb827ea
+
+###
+POST  http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Jôsue",
+    "email": "josue.teixeira2@teste.com.br",
+    "phone": "9999-11111"
+}
+
+###
+PUT  http://localhost:3000/contacts/a00387cd-8018-49ee-a966-befc4a0c5c42 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Matheus Andreatta",
+    "email": "matheus.andreatta@teste.com.br"
+}
