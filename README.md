@@ -2,30 +2,30 @@
 
 ## Começo de Tudo
 
-# Começando o Setup do Node
+Resumo do Projeto
+Construirmos uma API REST utilizando apenas os módulos nativos do próprio Node. Zero dependências por aqui!
 
-# yarn add nodemon -D
-# yarn add eslint -D
+Depois de aprender como o Node funciona sozinho, refazemos tudo utilizando o framework mais famoso e utilizado no mercado: o Express. Além disso, abordarmos Docker, Postgres, SQL e alguns patterns como o Singleton e o Repository.
 
-# yarn add uuid
-# yarn add express
-# yarn add pg
+Construímos um projeto que se integra com a API desenvolvida no Módulo 4 utilizando um Client HTTP que construímos do zero utilizando a fetch API do próprio JavaScript.
 
+React Router (v5)
 
-
-# Rodando Docker Image do postgres
-
-# docker pull image
-# docker run --name pg -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -p 5432:5432 -d postgres
-# docker exec -it pg bash
-# psql -U root
+E claro: usando apenas os pacotes necessários, aqui fazemos tudo na mão!
 
 
 
-# Comandos do Postgres
+### Começando o Setup do Node
+- yarn install
 
-# \l -> Use DATABASE
-# \c database_name - List DATABASE
-# \dt -> List Table from DATABASE
+### Rodando Docker Image do postgres
+- docker pull image
+- docker run --name pg -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -p 5432:5432 -d postgres
+- docker exec -it pg bash
+- psql -U root
 
+
+## Anotações
+React Router (v5)
+Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
