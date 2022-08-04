@@ -30,21 +30,28 @@ class ContactsRepository {
 
   async findById(id) {
     const row = await db.query(
-      `SELECT * FROM CONTACTS where id = ${id}`,
+      `SELECT * FROM CONTACTS where id = '${id}'`,
     );
     return row;
   }
 
   async findByEmail(email) {
     const row = await db.query(
-      `SELECT * FROM CONTACTS where email = ${email}`,
+      `SELECT * FROM CONTACTS where email = '${email}'`,
+    );
+    return row;
+  }
+
+  async findByName(name) {
+    const row = await db.query(
+      `SELECT * FROM CONTACTS where email like ${name}% `,
     );
     return row;
   }
 
   async delete(id) {
     const row = await db.query(
-      `DELETE * FROM CONTACTS where id = ${id}`,
+      `DELETE * FROM CONTACTS where id = "${id}"`,
     );
     return row;
   }
@@ -62,7 +69,7 @@ class ContactsRepository {
     return row;
   }
 
-  update(id, {
+  async update(id, {
     name, phone, email, category_id,
   }) {
     return new Promise((resolve) => {
